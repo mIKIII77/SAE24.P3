@@ -20,151 +20,144 @@ body {
 }
 
 .all-page-back {
-    background-color: #f6f6f6;
-    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
-    border: none;
-    border-width: 0;
-    border: 0 properties;
-    height: 100px;
-  }
+  background-color: #f6f6f6;
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+  border: none;
+  border-width: 0;
+  border: 0 properties;
+  height: 100px;
+}
 
-  thead {
-    font-family: "Quicksand";
-  }
-  
-  .table-top {
-    font-family: "Quicksand";
-  }
-  
-  .table-bot {
-    font-family: "Hind Siliguri";
-  }
+thead {
+  font-family: "Quicksand";
+}
 
-  .article-table {
-    margin-top: 3%;
-    margin-bottom: 7%;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
+.table-top {
+  font-family: "Quicksand";
+}
 
-  .text-bott-home {
-    text-align: center;
-    font-size: 2em;
-    font-family: "Hind Siliguri";
-  }
-  
-  form {
-    font-family: "Hind siliguri", cursive;
-    box-sizing: border-box;
-  }
-  
-  h1.home {
-    font-size: 35px;
-  }
-  
-  div.home {
-    text-align: center;
-    font-size: 25px;
-    height: 150px;
-    margin-top: 20px;
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    min-height: 100%;
-  }
-  div:last-of-type span.home {
+.table-bot {
+  font-family: "Hind Siliguri";
+}
+
+.article-table {
+  margin-top: 3%;
+  margin-bottom: 7%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.text-bott-home {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Hind Siliguri";
+}
+
+form {
+  font-family: "Hind siliguri", cursive;
+  box-sizing: border-box;
+}
+
+h1.home {
+  font-size: 35px;
+}
+
+div.home {
+  text-align: center;
+  font-size: 25px;
+  height: 150px;
+  margin-top: 20px;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-height: 100%;
+}
+div:last-of-type span.home {
+  margin-left: -2000px;
+  animation: slidein 20s;
+}
+
+@keyframes slidein {
+  0% {
     margin-left: -2000px;
-    animation: slidein 20s;
   }
-  
-  @keyframes slidein {
-    0% {
-      margin-left: -2000px;
-    }
-    20% {
-      margin-left: -00px;
-    }
-    55% {
-      margin-left: 0px;
-    }
-    35% {
-      margin-left: 0px;
-    }
-    100% {
-      margin-left: 0px;
-    }
+  20% {
+    margin-left: -00px;
   }
-  
-  thead {
-    font-family: "Quicksand";
+  55% {
+    margin-left: 0px;
   }
-  
-  .table-top {
-    font-family: "Quicksand";
+  35% {
+    margin-left: 0px;
   }
-  
-  .table-bot {
-    font-family: "Hind Siliguri";
+  100% {
+    margin-left: 0px;
   }
-  
-  .body-article-list {
-    background-color: #f6f6f6;
-    background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
-    border: none;
-    border-width: 0;
-    border: 0 properties;
-    height: 100px;  
-  }
+}
 
-  
+thead {
+  font-family: "Quicksand";
+}
+
+.table-top {
+  font-family: "Quicksand";
+}
+
+.table-bot {
+  font-family: "Hind Siliguri";
+}
+
+.body-article-list {
+  background-color: #f6f6f6;
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
+  border: none;
+  border-width: 0;
+  border: 0 properties;
+  height: 100px;
+}
+
 .navbar a {
-    text-decoration: none;
-  }
-  
-  .top-article-list {
-    font-family: "Quicksand";
-    text-align: center;
-    margin-top: 3%;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-radius: 5%;
-  
-  }
-  
-  div.produit {
-    display: flex;
-    box-sizing: border-box;
-    padding: 1rem;
-    max-width: 1500px;
-    width: 100%;
-    background: #fff;
-  }
-  
-  .title-home {
-    text-align: Center;
-    margin-top: 11%;
-    font-family: "Quicksand";
-    font-size: 8em;
-  }
-  
-  div.commande {
-    padding: 3rem;
-  }
-  
-  .button-valid {
-    text-align: center;
-    margin-top: 7%;
-    font-family: "Quicksand", sans-serif;
-  }
-  
-  
-  
-  .form-articles {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 5%;
-    font-family: "Hind Siliguri", sans-serif;
-  }
-  
+  text-decoration: none;
+}
 
-  
+.top-article-list {
+  font-family: "Quicksand";
+  text-align: center;
+  margin-top: 3%;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 5%;
+}
+
+div.produit {
+  display: flex;
+  box-sizing: border-box;
+  padding: 1rem;
+  max-width: 1500px;
+  width: 100%;
+  background: #fff;
+}
+
+.title-home {
+  text-align: Center;
+  margin-top: 11%;
+  font-family: "Quicksand";
+  font-size: 8em;
+}
+
+div.commande {
+  padding: 3rem;
+}
+
+.button-valid {
+  text-align: center;
+  margin-top: 7%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.form-articles {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  font-family: "Hind Siliguri", sans-serif;
+}
