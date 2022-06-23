@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<body class="body-article-list">
+  {% if searched %}
+  <div class="top-article-list">
+    <h1 class="shadow p-3 mb-5 bg-body rounded ">Vous avez recherché les données créées à ce moment : {{searched}}</h1>
+  </div>
+  <br />
+  <div class="article-table">
+    <table class="table table-light table-striped table-bordered">
+      <thead>
+        <tr class="table-dark">
+          <th class="table-top" scope="col">Nom du capteur</th>
+          <th class="table-top" scope="col">La piéce</th>
+          <th class="table-top" scope="col">L'emplacement</th>
+          <th class="table-top" scope="col">Date</th>
+          <th class="table-top" scope="col">Température</th>
+          <caption> La table des températures prises par les capteurs présent dans la base de données</caption>
+        </tr>
+      </thead>
+      {% for sensor_data in sensor_data %}
+      <tr>
+        <tr>
+            <td class="table-bot">{{ sensor_data.sensor}}</td>
+            <td class="table-bot">{{ sensor_data.sensor.piece }}</td>
+            <td class="table-bot">{{ sensor_data.sensor.emplacement }}</td>
+            <td class="table-bot">{{ sensor_data.datetime }}</td>
+            <td class="table-bot">{{ sensor_data.temp }}°C</td>
+          </tr>
+            {% endfor %}
+
+            {% else %}
+            <h1 class="title-home">N'hésite pas, fait une recherche !</h1>
+            {% endif %}
+            </center>
+        </body>
+        {% endblock %}
+
+        </td>
+      </tr>
+    </table>

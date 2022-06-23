@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+    <title> GR - 7 | Page d'accueille</title>
+  </head>
+  
+  <body class="home-page-back"> 
+    <div>
+      <header>
+  
+      </header>
+  
+      <main>
+        <h1 class="title-home">GR - 7 </h1> 
+        </div>
+        <p class="text-bott-home">IUT Colmar - SAE24 - Projet Intégratif</p>
+        <div class="text-center">
+          <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Qu'est-ce que c'est ?
+          </button>
+        </div>
+  
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"> Qui sommes nous ?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Avec nous perdez plus de temps à faire vos courses !<br>
+                 Spécialisé dans la vente par drive, nous couveront la totalité du territoire français
+                 et de la Wallonie, grâce à nos nombreux points de vente.<br>
+                  Nous proposons une très large gamme de produit alimentaire, puériculture,
+                 des produits d’hygiène et même de la décoration et de l’ameublement.<br>
+                Tous nos fruits et légumes sont issues d’une agriculture biologique et durable,
+                 pour un avenir plus serein.
+
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-info" href="{% url 'all_sensors_temp' %}">La liste des produits</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    <!-- <div class="img">
+  <img src="{% static "media/Logo.png" %}" alt="home" width="400" />
+  </div> -->
+  </body>
+{% endblock %}

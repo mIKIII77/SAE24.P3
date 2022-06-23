@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<head>
+    <title> Mise à jour du capteur </title>
+  </head>
+
+<body class="body-article-list">
+    <h1 class=" top-article-list shadow p-3 mb-5 bg-body rounded">Mettre à jour le capteur :</h1>
+    <div class="form-articles">
+        <form class="quest" method="post" action="">
+            {% csrf_token %}
+            {{ form.nom|as_crispy_field }}
+            {{ form.emplacement|as_crispy_field }}
+            <div class="button-valid">
+                <input class="btn btn-success" type="submit" name="submit" value="Valider">
+                <a class="btn btn-outline-danger" href="{% url 'all_sensors_data' %}">Annuler</a>
+            </div>
+    </div>
+</body>
+
+{% endblock %}

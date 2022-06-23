@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!-- <script>setTimeout(function(){
+  window.location.reload(1);
+}, 6000);
+</script> -->
+<head>
+    <title>  Les données du capteur 1 </title>
+</head>
+<h1 class=" top-article-list shadow p-3 mb-5 bg-body rounded"> Les données du capteur 1</h1>
+<body class="all-page-back">
+<div class="article-table">
+<table class="table table-sm table-light table-striped table-bordered">
+  <thead>
+    <tr class="table-dark">
+      <th class="table-top" scope="col">Nom du capteur</th>
+      <th class="table-top" scope="col">La piéce</th>
+      <th class="table-top" scope="col">L'emplacement</th>
+      <th class="table-top" scope="col">Date</th>
+      <th class="table-top" scope="col">Température</th>
+      <caption> La table des températures prises par le capteur 1 présent dans la base de données</caption>
+    </tr>
+  </thead>
+{% for sensor_data in sensor_data %}
+<tr>
+  <td class="table-bot">{{ sensor_data.sensor}}</td>
+  <td class="table-bot">{{ sensor_data.sensor.piece }}</td>
+  <td class="table-bot">{{ sensor_data.sensor.emplacement }}</td>
+  <td class="table-bot">{{ sensor_data.datetime }}</td>
+  <td class="table-bot">{{ sensor_data.temp }}°C</td>
+</tr>
+{% empty %}
+</table>
+</div>
+<tr>
+<td colspan="4">Aucune catégorie de produite est présente, votre base de données est vide !</td>
+</tr>
+</div>
+</div>
+</body>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<head>
+  <title> Tous les capteurs </title>
+</head>
+<h1 class=" top-article-list shadow p-3 mb-5 bg-body rounded">Tous les capteurs</h1>
+
+
+<body class="all-page-back">
+<div class="article-table">
+<table class="table table-sm table-light table-striped table-bordered">
+  <thead>
+    <tr class="table-dark">
+      <th class="table-top" scope="col">Nom du capteur</th>
+      <th class="table-top" scope="col">La piéce</th>
+      <th class="table-top" scope="col">L'emplacement</th>
+      <th class="table-top" scope="col">Adresse MAC</th>
+      <th class="table-top" scope="col"></th>
+      <caption> La table des capteurs présent dans la base de données</caption>
+    </tr>
+  </thead>
+{% for sensor in sensors %}
+<tr>
+  <td class="table-bot">{{ sensor.nom }}</td>
+  <td class="table-bot">{{ sensor.piece }}</td>
+  <td class="table-bot">{{ sensor.emplacement }}</td>
+  <td class="table-bot">{{ sensor.macaddr }}</td>
+  <td class="table-top text-end">
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <a href="{% url 'update_sensor' sensor.id  %}" type="button" class="btn btn-outline-success btn-sm"> Mettre à jour </a>
+      </div>
+  </td>
+</tr>
+{% empty %}
+</table>
+</div>
+<tr>
+<td colspan="4">Aucune catégorie de produite est présente, votre base de données est vide ! <a href=""> Ajouter le
+    premiere article</article></a>.</td>
+</tr>
+</div>
+</div>
+</body>
+{% endfor %}
+
+{% endblock %}
